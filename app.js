@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const Joi = require('@hapi/joi');
-const movies = require('./movies');
+const movies = require('./controller/movies');
+const cron = require('./controller/cron');
 
 app.use(express.json());
 
 app.use('/abc', movies);
+app.use('/abc', cron);
 
 
 app.get('/', (req,res) => {

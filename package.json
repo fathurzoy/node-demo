@@ -10,8 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
+    "axios": "^1.5.1",
     "debug": "4.1.1",
     "express": "^4.17.1",
+    "node-cron": "^3.0.2",
+    "node-telegram-bot-api": "^0.63.0",
     "nodemon": "^2.0.2"
   }
 }
