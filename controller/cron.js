@@ -149,7 +149,7 @@ router.get("/api/cron", async function (req, res) {
 				}
 			}
 
-			console.log('ok')
+			console.log('okq')
 			// noData = true
 			// if (response.data.success && Array.isArray(response.data.data)) {
 			//   response.data.data.forEach((item) => {
