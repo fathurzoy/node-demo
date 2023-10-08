@@ -164,10 +164,26 @@ router.get("/api/cron", async function (req, res) {
 			// if (noData) {
 			//   console.log("kuota 0")
 			// }
+
 			res.status(200).json({ status: "oke" });
 
 		} catch (error) {
 			console.error('Error:', error);
+		} finally {
+			const jakartaTimezone = 'Asia/Jakarta';
+			const options = {
+				timeZone: jakartaTimezone,
+				year: 'numeric',
+				month: 'numeric',
+				day: 'numeric',
+				hour: 'numeric',
+				minute: 'numeric',
+				second: 'numeric',
+				hour12: false, // Use 24-hour format
+			};
+
+			const jakartaDateTime = new Date().toLocaleString('en-US', options);
+			console.log('Current Date and Time in Jakarta:', jakartaDateTime);
 		}
 	}
 });
