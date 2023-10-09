@@ -12,27 +12,6 @@ const bot = new TelegramBot(tokenBotTele, { polling: true });
 const filter = [
 	{
 		route: "&filter[route]=halim-bandung",
-		startDate: "&filter[date][$gte]=2023-10-07T17:00:00.000Z",
-		endDate: "&filter[date][$lte]=2023-10-09T16:59:59.059Z"
-	},
-	{
-		route: "&filter[route]=halim-tegalluar",
-		startDate: "&filter[date][$gte]=2023-10-07T17:00:00.000Z",
-		endDate: "&filter[date][$lte]=2023-10-09T16:59:59.059Z"
-	},
-	{
-		route: "&filter[route]=tegalluar-halim",
-		startDate: "&filter[date][$gte]=2023-10-07T17:00:00.000Z",
-		endDate: "&filter[date][$lte]=2023-10-09T16:59:59.059Z"
-	},
-	{
-		route: "&filter[route]=bandung-halim",
-		startDate: "&filter[date][$gte]=2023-10-07T17:00:00.000Z",
-		endDate: "&filter[date][$lte]=2023-10-09T16:59:59.059Z"
-	},
-	// 
-	{
-		route: "&filter[route]=halim-bandung",
 		startDate: "&filter[date][$gte]=2023-10-09T17:00:00.000Z",
 		endDate: "&filter[date][$lte]=2023-10-11T16:59:59.059Z"
 	},
@@ -92,6 +71,27 @@ const filter = [
 		route: "&filter[route]=bandung-halim",
 		startDate: "&filter[date][$gte]=2023-10-13T17:00:00.000Z",
 		endDate: "&filter[date][$lte]=2023-10-15T16:59:59.059Z"
+	},
+	// 
+	{
+		route: "&filter[route]=halim-bandung",
+		startDate: "&filter[date][$gte]=2023-10-15T17:00:00.000Z",
+		endDate: "&filter[date][$lte]=2023-10-17T16:59:59.059Z"
+	},
+	{
+		route: "&filter[route]=halim-tegalluar",
+		startDate: "&filter[date][$gte]=2023-10-15T17:00:00.000Z",
+		endDate: "&filter[date][$lte]=2023-10-17T16:59:59.059Z"
+	},
+	{
+		route: "&filter[route]=tegalluar-halim",
+		startDate: "&filter[date][$gte]=2023-10-15T17:00:00.000Z",
+		endDate: "&filter[date][$lte]=2023-10-17T16:59:59.059Z"
+	},
+	{
+		route: "&filter[route]=bandung-halim",
+		startDate: "&filter[date][$gte]=2023-10-15T17:00:00.000Z",
+		endDate: "&filter[date][$lte]=2023-10-17T16:59:59.059Z"
 	},
 ]
 
